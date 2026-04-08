@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide de d&eacute;marrage — R&eacute;sum&eacute; d'Appel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; background: #f8f6ff; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; gap: 16px; margin-bottom: 32px; }
+    nav a { color: #007AFF; text-decoration: none; font-size: 14px; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #007AFF; }
+    .subtitle { color: #666; margin-bottom: 40px; }
+    h2 { font-size: 22px; font-weight: 700; margin-top: 40px; margin-bottom: 16px; color: #1a1a2e; }
+    h3 { font-size: 18px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; }
+    p, li { font-size: 16px; margin-bottom: 12px; }
+    ul, ol { padding-left: 24px; margin-bottom: 16px; }
+    li { margin-bottom: 8px; }
+    .step { background: #fff; border-radius: 16px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .step-number { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #007AFF; color: white; border-radius: 50%; font-weight: 700; font-size: 18px; margin-bottom: 12px; }
+    .step h3 { margin-top: 0; }
+    .highlight { background: #e8f5e9; border-left: 4px solid #34C759; padding: 16px 20px; border-radius: 8px; margin: 16px 0; }
+    .warning { background: #fff3e0; border-left: 4px solid #FF9500; padding: 16px 20px; border-radius: 8px; margin: 16px 0; }
+    .provider { background: #fff; border-radius: 16px; padding: 20px; margin-bottom: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 4px solid #007AFF; }
+    .provider h3 { margin-top: 0; color: #007AFF; }
+    .provider.claude { border-left-color: #D97706; }
+    .provider.claude h3 { color: #D97706; }
+    .provider.chatgpt { border-left-color: #10A37F; }
+    .provider.chatgpt h3 { color: #10A37F; }
+    .provider.gemini { border-left-color: #4285F4; }
+    .provider.gemini h3 { color: #4285F4; }
+    .provider.copilot { border-left-color: #0078D4; }
+    .provider.copilot h3 { color: #0078D4; }
+    code { background: #f0edfa; padding: 2px 8px; border-radius: 4px; font-size: 14px; }
+    .btn-link { display: inline-block; background: #007AFF; color: white; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 15px; margin: 8px 4px 8px 0; }
+    .btn-link:hover { opacity: 0.9; }
+    footer { text-align: center; color: #999; font-size: 14px; margin-top: 48px; }
+    footer a { color: #007AFF; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="landing.html">Accueil</a>
+      <a href="features.html">Fonctionnalit&eacute;s</a>
+      <a href="support.html">Support</a>
+      <a href="guide.html"><strong>Guide</strong></a>
+    </nav>
+
+    <h1>Guide de d&eacute;marrage</h1>
+    <p class="subtitle">Suivez ces &eacute;tapes pour commencer &agrave; utiliser R&eacute;sum&eacute; d'Appel en 5 minutes.</p>
+
+    <!-- ETAPE 1 -->
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>T&eacute;l&eacute;chargez l'application</h3>
+      <p>Installez R&eacute;sum&eacute; d'Appel depuis le store de votre t&eacute;l&eacute;phone :</p>
+      <a href="#" class="btn-link">Google Play</a>
+      <a href="#" class="btn-link" style="background: #1a1a2e;">App Store</a>
+    </div>
+
+    <!-- ETAPE 2 -->
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Cr&eacute;ez votre compte</h3>
+      <p>Ouvrez l'app et suivez l'onboarding :</p>
+      <ol>
+        <li>Choisissez votre <strong>langue</strong> (Fran&ccedil;ais ou Anglais)</li>
+        <li>Parcourez les &eacute;crans d'introduction</li>
+        <li>Entrez votre <strong>code d'invitation</strong> (demand&eacute; par l'admin)</li>
+        <li>Cr&eacute;ez votre compte avec votre <strong>nom, email et mot de passe</strong></li>
+      </ol>
+      <div class="warning">
+        <strong>Pas de code d'invitation ?</strong> Contactez votre administrateur ou &eacute;crivez-nous &agrave; <strong>eric.renald@solutionsjsa.com</strong>
+      </div>
+    </div>
+
+    <!-- ETAPE 3 -->
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Choisissez votre assistant IA</h3>
+      <p>Allez dans <strong>R&eacute;glages &rarr; Mon assistant IA</strong> et choisissez parmi :</p>
+      <ul>
+        <li><strong>Claude</strong> (Anthropic) &mdash; excellent pour le fran&ccedil;ais</li>
+        <li><strong>ChatGPT</strong> (OpenAI) &mdash; le plus connu</li>
+        <li><strong>Gemini</strong> (Google) &mdash; rapide et gratuit</li>
+        <li><strong>Copilot</strong> (Microsoft) &mdash; int&eacute;gr&eacute; &agrave; l'&eacute;cosyst&egrave;me Microsoft</li>
+      </ul>
+      <div class="highlight">
+        <strong>Recommandation :</strong> Pour le fran&ccedil;ais, Claude et ChatGPT donnent les meilleurs r&eacute;sum&eacute;s. Gemini est gratuit pour commencer.
+      </div>
+    </div>
+
+    <!-- ETAPE 4 - CLE API -->
+    <div class="step">
+      <div class="step-number">4</div>
+      <h3>Obtenez votre cl&eacute; API (gratuit)</h3>
+      <p>La cl&eacute; API permet &agrave; l'app de communiquer avec l'IA pour g&eacute;n&eacute;rer vos r&eacute;sum&eacute;s. Voici comment l'obtenir selon votre IA choisie :</p>
+
+      <div class="provider claude">
+        <h3>&#10024; Claude (Anthropic)</h3>
+        <ol>
+          <li>Allez sur <a href="https://console.anthropic.com/settings/keys" target="_blank" class="btn-link" style="font-size:13px; padding:8px 16px;">console.anthropic.com</a></li>
+          <li>Cr&eacute;ez un compte (gratuit) ou connectez-vous</li>
+          <li>Cliquez sur <strong>&laquo; Create Key &raquo;</strong></li>
+          <li>Donnez un nom (ex: &laquo; Resume d'Appel &raquo;)</li>
+          <li>Copiez la cl&eacute; qui commence par <code>sk-ant-...</code></li>
+        </ol>
+        <p><strong>Cr&eacute;dits gratuits :</strong> 5$ offerts &agrave; l'inscription. Un r&eacute;sum&eacute; co&ucirc;te environ 0,01$.</p>
+      </div>
+
+      <div class="provider chatgpt">
+        <h3>&#128172; ChatGPT (OpenAI)</h3>
+        <ol>
+          <li>Allez sur <a href="https://platform.openai.com/api-keys" target="_blank" class="btn-link" style="font-size:13px; padding:8px 16px; background:#10A37F;">platform.openai.com</a></li>
+          <li>Cr&eacute;ez un compte (gratuit) ou connectez-vous</li>
+          <li>Cliquez sur <strong>&laquo; Create new secret key &raquo;</strong></li>
+          <li>Donnez un nom (ex: &laquo; Resume d'Appel &raquo;)</li>
+          <li>Copiez la cl&eacute; qui commence par <code>sk-...</code></li>
+        </ol>
+        <p><strong>Cr&eacute;dits gratuits :</strong> 5$ offerts. Rechargez &agrave; partir de 5$ ensuite.</p>
+      </div>
+
+      <div class="provider gemini">
+        <h3>&#128142; Gemini (Google)</h3>
+        <ol>
+          <li>Allez sur <a href="https://aistudio.google.com/app/apikey" target="_blank" class="btn-link" style="font-size:13px; padding:8px 16px; background:#4285F4;">aistudio.google.com</a></li>
+          <li>Connectez-vous avec votre compte Google</li>
+          <li>Cliquez sur <strong>&laquo; Create API key &raquo;</strong></li>
+          <li>Copiez la cl&eacute;</li>
+        </ol>
+        <p><strong>100% gratuit</strong> pour un usage personnel. Aucune carte de cr&eacute;dit requise.</p>
+      </div>
+
+      <div class="provider copilot">
+        <h3>&#128187; Copilot (Microsoft)</h3>
+        <ol>
+          <li>Allez sur <a href="https://github.com/settings/copilot" target="_blank" class="btn-link" style="font-size:13px; padding:8px 16px; background:#0078D4;">github.com/settings/copilot</a></li>
+          <li>Connectez-vous &agrave; votre compte GitHub</li>
+          <li>Activez Copilot et copiez votre token</li>
+        </ol>
+        <p><strong>Essai gratuit :</strong> 30 jours. Ensuite 10$/mois.</p>
+      </div>
+    </div>
+
+    <!-- ETAPE 5 -->
+    <div class="step">
+      <div class="step-number">5</div>
+      <h3>Collez votre cl&eacute; dans l'app</h3>
+      <ol>
+        <li>Dans l'app, allez dans <strong>R&eacute;glages &rarr; Ma cl&eacute; secr&egrave;te</strong></li>
+        <li>Collez votre cl&eacute; API dans le champ</li>
+        <li>Cliquez <strong>&laquo; Enregistrer ma cl&eacute; &raquo;</strong></li>
+      </ol>
+      <div class="highlight">
+        <strong>S&eacute;curit&eacute; :</strong> Votre cl&eacute; est stock&eacute;e dans le trousseau s&eacute;curis&eacute; de votre t&eacute;l&eacute;phone. Elle n'est jamais envoy&eacute;e &agrave; nos serveurs.
+      </div>
+    </div>
+
+    <!-- ETAPE 6 -->
+    <div class="step">
+      <div class="step-number">6</div>
+      <h3>Enregistrez votre premier appel !</h3>
+      <ol>
+        <li>Sur l'&eacute;cran d'accueil, appuyez sur le gros bouton <strong>&laquo; Enregistrer un appel &raquo;</strong></li>
+        <li>Passez votre appel en haut-parleur (pour que le micro capture la conversation)</li>
+        <li>Quand l'appel est termin&eacute;, appuyez sur <strong>&laquo; Arr&ecirc;ter &raquo;</strong></li>
+        <li>L'IA g&eacute;n&egrave;re automatiquement le r&eacute;sum&eacute; en quelques secondes</li>
+      </ol>
+      <div class="warning">
+        <strong>Version gratuite :</strong> 3 enregistrements par jour. Passez &agrave; Pro (9,99 $/mois) pour un acc&egrave;s illimit&eacute;.
+      </div>
+    </div>
+
+    <!-- ETAPE 7 -->
+    <div class="step">
+      <div class="step-number">7</div>
+      <h3>Ajoutez vos contacts</h3>
+      <ol>
+        <li>Allez dans l'onglet <strong>Contacts</strong></li>
+        <li>Cliquez <strong>&laquo; Importer depuis l'appareil &raquo;</strong> pour importer vos contacts</li>
+        <li>Marquez vos contacts professionnels comme <strong>&laquo; Pro &raquo;</strong></li>
+        <li>Les appels de vos contacts Pro seront g&eacute;r&eacute;s automatiquement</li>
+      </ol>
+    </div>
+
+    <!-- ASTUCES -->
+    <h2>&#128161; Astuces</h2>
+
+    <div class="highlight">
+      <strong>Rapport quotidien (Pro) :</strong> Activez le rapport email dans R&eacute;glages &rarr; Rapport par email. Vous recevrez chaque jour un r&eacute;sum&eacute; de tous vos appels.
+    </div>
+
+    <div class="highlight">
+      <strong>Favoris :</strong> Appuyez sur l'&eacute;toile &#11088; &agrave; c&ocirc;t&eacute; d'un appel dans l'Historique pour le marquer comme favori et le retrouver facilement.
+    </div>
+
+    <div class="highlight">
+      <strong>Recherche :</strong> Utilisez la barre de recherche dans l'Historique pour retrouver un appel par mot-cl&eacute; (nom du contact, sujet discut&eacute;, etc.).
+    </div>
+
+    <div class="highlight">
+      <strong>Partage :</strong> Ouvrez un appel dans l'Historique et appuyez sur &laquo; Partager le r&eacute;sum&eacute; &raquo; pour l'envoyer par email, SMS ou WhatsApp.
+    </div>
+
+    <footer>
+      <p>&copy; 2026 R&eacute;sum&eacute; d'Appel &mdash; <a href="index.html">Confidentialit&eacute;</a> &middot; <a href="support.html">Support</a></p>
+    </footer>
+  </div>
+</body>
+</html>
