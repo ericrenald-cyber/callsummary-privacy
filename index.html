@@ -23,7 +23,7 @@
 <body>
   <div class="container">
     <h1>Politique de confidentialit&eacute;</h1>
-    <p class="subtitle">Derni&egrave;re mise &agrave; jour : 7 avril 2026</p>
+    <p class="subtitle">Derni&egrave;re mise &agrave; jour : 5 mai 2026</p>
 
     <div class="highlight">
       <strong>En r&eacute;sum&eacute; :</strong> Vos donn&eacute;es restent sur votre t&eacute;l&eacute;phone. Nous ne vendons, ne partageons et ne mon&eacute;tisons aucune donn&eacute;e personnelle.
@@ -52,15 +52,37 @@
       <li><strong>Cl&eacute; API</strong> : stock&eacute;e de mani&egrave;re s&eacute;curis&eacute;e via le trousseau de votre appareil (Secure Store)</li>
     </ul>
 
-    <h2>4. Services tiers</h2>
-    <p>L'Application utilise un service d'intelligence artificielle (au choix de l'utilisateur) pour g&eacute;n&eacute;rer les transcriptions et r&eacute;sum&eacute;s :</p>
+    <h2>4. Services tiers d'intelligence artificielle</h2>
+    <p>Pour g&eacute;n&eacute;rer la transcription et le r&eacute;sum&eacute; d'un appel, l'Application doit envoyer le fichier audio &agrave; un service d'IA tiers. <strong>Aucune transcription n'est effectu&eacute;e localement</strong> : l'envoi &agrave; un service tiers est techniquement n&eacute;cessaire.</p>
+
+    <p><strong>Fournisseurs IA disponibles (au choix exclusif de l'utilisateur) :</strong></p>
     <ul>
-      <li>Anthropic (Claude)</li>
-      <li>OpenAI (ChatGPT)</li>
-      <li>Google (Gemini)</li>
-      <li>Microsoft (Copilot)</li>
+      <li>Anthropic (Claude) &mdash; <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">politique de confidentialit&eacute;</a></li>
+      <li>OpenAI (ChatGPT, Copilot) &mdash; <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener">politique de confidentialit&eacute;</a></li>
+      <li>Google (Gemini) &mdash; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialit&eacute;</a></li>
+      <li>Microsoft (Copilot via OpenAI) &mdash; <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">politique de confidentialit&eacute;</a></li>
     </ul>
-    <p>L'audio est envoy&eacute; au service choisi uniquement pour la transcription. Nous vous invitons &agrave; consulter la politique de confidentialit&eacute; du service que vous choisissez. <strong>Votre cl&eacute; API personnelle</strong> est utilis&eacute;e ; nous n'avons pas acc&egrave;s &agrave; vos requ&ecirc;tes.</p>
+
+    <p><strong>Donn&eacute;es exactes envoy&eacute;es au fournisseur IA :</strong></p>
+    <ul>
+      <li>Le fichier audio (.wav) que vous choisissez de transcrire</li>
+      <li>La transcription g&eacute;n&eacute;r&eacute;e (renvoy&eacute;e au fournisseur lors de l'&eacute;tape de r&eacute;sum&eacute;)</li>
+    </ul>
+    <p>Aucun contact, aucun nom, aucun num&eacute;ro de t&eacute;l&eacute;phone, aucune m&eacute;tadonn&eacute;e d'appel et aucune information de compte ne sont transmis aux fournisseurs IA.</p>
+
+    <p><strong>Comment les donn&eacute;es sont envoy&eacute;es :</strong> directement depuis votre appareil vers l'API du fournisseur via une connexion HTTPS chiffr&eacute;e, en utilisant <strong>votre cl&eacute; API personnelle</strong> que vous configurez dans l'Application. Nous (le d&eacute;veloppeur de Je L'Notes) n'interm&eacute;diatons jamais ces requ&ecirc;tes et n'avons aucun acc&egrave;s &agrave; vos audios, transcriptions ou r&eacute;sum&eacute;s.</p>
+
+    <p><strong>Consentement explicite avant tout envoi :</strong> avant qu'aucune donn&eacute;e ne soit envoy&eacute;e &agrave; un service IA, l'Application affiche un &eacute;cran de consentement (R&eacute;glages &gt; Cl&eacute; API) qui d&eacute;taille (i)&nbsp;quelles donn&eacute;es seront envoy&eacute;es, (ii)&nbsp;&agrave; quel fournisseur, et (iii)&nbsp;comment retirer le consentement. Tant que vous n'avez pas accept&eacute; ce consentement, l'Application refuse toute transcription. Vous pouvez retirer votre consentement &agrave; tout moment en supprimant votre cl&eacute; API dans les R&eacute;glages.</p>
+
+    <h3 style="font-size: 17px; font-weight: 600; margin-top: 20px; margin-bottom: 10px;">Protection &eacute;quivalente offerte par les tiers</h3>
+    <p>Nous avons s&eacute;lectionn&eacute; ces fournisseurs parce qu'ils offrent des garanties de protection des donn&eacute;es <strong>au moins &eacute;quivalentes</strong> &agrave; celles de la pr&eacute;sente politique :</p>
+    <ul>
+      <li><strong>Conformit&eacute; r&eacute;glementaire</strong> : Anthropic, OpenAI, Google et Microsoft d&eacute;clarent leur conformit&eacute; au RGPD (UE) et au CCPA (Californie), avec des Data Processing Agreements (DPA) standards.</li>
+      <li><strong>Certifications de s&eacute;curit&eacute;</strong> : les quatre fournisseurs sont certifi&eacute;s SOC 2 Type II ; chiffrement des donn&eacute;es en transit (TLS) et au repos.</li>
+      <li><strong>Pas d'entra&icirc;nement sur vos donn&eacute;es par d&eacute;faut</strong> : par leurs conditions API actuelles, Anthropic, OpenAI, Google (Gemini API tier payant) et Microsoft n'utilisent pas les donn&eacute;es soumises via API pour entra&icirc;ner leurs mod&egrave;les.</li>
+      <li><strong>R&eacute;tention limit&eacute;e</strong> : les fournisseurs limitent la r&eacute;tention des contenus API (typiquement 30 jours pour la d&eacute;tection d'abus, puis suppression), conform&eacute;ment &agrave; leurs politiques publi&eacute;es.</li>
+    </ul>
+    <p>Nous vous invitons &agrave; consulter la politique du fournisseur que vous choisissez (liens ci-dessus) pour les d&eacute;tails &agrave; jour. Si un fournisseur cessait d'offrir une protection &eacute;quivalente, nous le retirerions de l'Application.</p>
 
     <h2>5. Permissions requises</h2>
     <ul>
